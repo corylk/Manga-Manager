@@ -82,7 +82,7 @@ class App(MetadataManagerLib):
             volume = cinfo.cinfo_object.volume
             year = cinfo.cinfo_object.year
             extension = Path(cinfo.file_name).suffix
-            new_file = f'{series} v{volume}{extension}'
+            new_file = f'{series} {volume}{extension}'
             new_folder = f'/manga/manga_incoming/{series} ({year})'
 
             if not os.path.exists(new_folder):
